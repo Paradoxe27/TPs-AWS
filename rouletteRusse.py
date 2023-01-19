@@ -11,11 +11,9 @@ mise=200
 listeRandom=[]
 for i in range(0,29):
     listeRandom.append(i)
-
 print("Vous possedez ",bourse,"\n voulez vous commencer à jouer?\n\t\t mise 200f\n")
 start=str(input())
 while start=="oui":
-    
     if bourse>=mise:
         nombre=int(input("choisissez votre chiffre\n"))
         while nombre not in listeRandom:
@@ -39,6 +37,5 @@ while start=="oui":
     else:    
         print("Votre solde est insuffisant")
         start=="non"
-        break
-        
+        break 
 print("A bientot")
